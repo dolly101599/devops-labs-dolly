@@ -46,6 +46,7 @@ resource "aws_db_subnet_group" "ditto_db_subnet_group" {
 resource "aws_security_group" "rds_ditto" {
   name        = "rds-dt"
   description = "Security group for dittodb RDS MySQL instance"
+  vpc_id      = aws_vpc.ditto_vpc.id
 
   ingress {
     description = "MySQL"
@@ -67,11 +68,9 @@ resource "aws_db_instance" "dittodb" {
   allocated_storage    = 10
   engine               = "mysql"
   engine_version       = "8.0.33"
-  instance_class       = "db.t2.micro"
+  instance_class       = "db.t3.micro"
   username             = "clusteradmin"
-  password             = "cladmin"
-  publicly_accessible  = true
-  identifier           = "ditto-tf-db"
+  password             = "cladminuser"
   storage_type         = "gp2"
   db_name              = "dittodb"
   skip_final_snapshot  = true
