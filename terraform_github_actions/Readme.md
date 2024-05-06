@@ -1,18 +1,12 @@
-# PROJECT TITLE -> REPLACE THIS
+# Creating AWS resources using Terraform and Github Actions
 
-## Contributor Name -> Add github handle here
+## Contributor Name -> @DiptoChakrabarty
 
 ## DESCRIPTION OF PROJECT
 ```
-Add some description here
+This project illustrates how to create aws resources using terraform and github actions
 ```
 
 ## Steps to run
 
-- Step 1
-
-- Step 2
-
-- Step 3
-
-## ScreenShots -> IF NEEDED
+- [Please read the blog here](https://medium.com/@diptochakrabarty/streamline-terraform-automation-using-github-actions-1faa8e72ecd0)
